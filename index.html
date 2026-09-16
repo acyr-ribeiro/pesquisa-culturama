@@ -126,8 +126,8 @@
         <input type="color" name="userFavoriteColor" id="favoriteColor">
       </fieldset> -->
 
-      <fieldset>
-        <!-- OPNIÃO -->
+      <!-- <fieldset>
+        OPNIÃO
 
         <legend>Opnião</legend>
         <p>
@@ -147,7 +147,20 @@
         <br>
         <label for="commentBox">Possui alguma sugestão?</label>
         <textarea name="userComment" id="commentBox" placeholder="Digite aqui sua opnião..."></textarea>
+      </fieldset> -->
+      
+      <fieldset>
+        <!-- CONSENTIMENTO E RESULTADO -->
+
+        <legend>Confirmações</legend>
+        <input type="checkbox" name="userLgpd" id="lgpdAccept" value="accepted" required>
+        <label for="lgpdAccept">Eu aceito participar da pesquisa</label>
+        <br>
+        <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+        <label for="getResult">Desejo receber o resultado por e-mail</label>
+        
       </fieldset>
+      
       <br>
       <button type="submit">Enviar</button>
     </form>
