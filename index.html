@@ -11,48 +11,47 @@
   </header>
   <section>
     <form action="" method="get">
-      <!-- <fieldset>
-        DADOS PESSOAIS
+      <fieldset>
+        <!-- DADOS PESSOAIS -->
 
         <legend>Dados Pessoais</legend>
-        <label for="userName">Nome</label>
-        <input type="text" name="userName" id="" required>
+        <label for="name">Nome</label>
+        <input type="text" name="userName" id="name" required>
         <br>
-        <label for="userAge">Idade</label>
-        <input type="number" name="userAge" id="" min="12" max="100" required>
+        <label for="age">Idade</label>
+        <input type="number" name="userAge" id="age" min="12" max="100" required>
         <br>
         <label for="birthDate">Data de nascimento</label>
-        <input type="date" name="birthDate" id="">
+        <input type="date" name="UserBirthDate" id="birthDate">
         <br>
-        <label for="userEmail">Email</label>
-        <input type="email" name="userEmail" required>
+        <label for="email">Email</label>
+        <input type="email" name="userEmail" id="email" required>
         <br>
-        <label for="userPhoneNumber">Telefone</label>
-        <input type="tel" name="userPhoneNumber" id="" pattern="[0-9]{11} " placeholder="DDD + número sem espaços ou hífen">
+        <label for="phoneNumber">Telefone</label>
+        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11} " placeholder="DDD + número sem espaços ou hífen">
         <br>
-        <label for="userImage">Upload de foto</label>
-        <input type="file" name="userImage" id="" accept="image/*">
-      </fieldset> -->
+        <label for="image">Upload de foto</label>
+        <input type="file" name="userImage" id="image" accept="image/*">
+      </fieldset>
       
       <fieldset>
-        <!-- PERFIL -->
-
+        <!-- PERFIL  -->
 
         <legend>Perfil</legend>
 
         <p>Gênero:</p>
-        <input type="radio" name="userGender" id="" value="feminino">
-        <label for="userGender">Feminino</label>
+        <input type="radio" name="userGender" id="genderFemale" value="feminino">
+        <label for="genderFemale">Feminino</label>
 
-        <input type="radio" name="userGender" id="" value="masculino">
-        <label for="userGender">Masculino</label>
+        <input type="radio" name="userGender" id="genderMale" value="masculino">
+        <label for="genderMale">Masculino</label>
 
-        <input type="radio" name="userGender" id="" value="notInformed">
-        <label for="userGender">Prefiro não informar</label>
+        <input type="radio" name="userGender" id="genderNotInformed" value="notInformed">
+        <label for="genderNotInformed">Prefiro não informar</label>
         <br>
 
         <label for="maritalStatus">Estado Civil:</label>
-        <select name="maritalStatus" id="">
+        <select name="UserMaritalStatus" id="maritalStatus">
           <option value="notInformed">Selecione...</option>
           <option value="casado">Casado</option>
           <option value="solteiro">Solteiro</option>
@@ -61,8 +60,8 @@
         </select>
       
         
-        <label for="userState">Estado:</label>
-        <select name="userState" required>
+        <label for="state">Estado:</label>
+        <select name="userState" id="state" required>
           <option value="acre">Acre</option>
           <option value="alagoas">Alagoas</option>
           <option value="amapa">Amapá</option>
@@ -92,10 +91,40 @@
           <option value="tocantins">Tocantins</option>
         </select>
 
-        <label for="userCity">Cidade</label>
-        <input type="text" name="userCity" id="">
+        <label for="city">Cidade</label>
+        <input type="text" name="userCity" id="city">
       </fieldset>
 
+      <fieldset>
+        <!-- HÁBITOS -->
+
+        <legend>Hábitos</legend>
+        <p>Redes sociais:</p>
+        <input type="checkbox" name="socialMedia" id="socialInstagram" value="instagram">
+        <label for="socialInstagram">Instagram</label>
+        <br>
+        <input type="checkbox" name="socialMedia" id="socialX" value="x">
+        <label for="socialX">X</label>
+        <br>
+        <input type="checkbox" name="socialMedia" id="socialFacebook" value="facebook">
+        <label for="socialFacebook">Facebook</label>
+        <br>
+        <input type="checkbox" name="socialMedia" id="socialTiktok" value="tiktok">
+        <label for="socialTiktok">Tiktok</label>
+        <br>
+
+        <label for="musicStyle">Estilo musical:</label>
+        <input type="text" name="userMusicStyle" id="musicStyle" list="styleTypes">
+        <datalist id="styleTypes">
+          <option value="Pop">
+          <option value="Rock">
+          <option value="Samba">
+          <option value="Sertanejo">
+        </datalist>
+        <br>
+        <label for="favoriteColor">Cor favorita:</label>
+        <input type="color" name="userFavoriteColor" id="favoriteColor">
+      </fieldset>
       <br>
       <button type="submit">Enviar</button>
     </form>
